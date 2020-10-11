@@ -32,9 +32,7 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        sh '''sudo apt-get update -y
-sudo apt-get install -y zip
-echo "Script executed successfully"'''
+        sh 'echo "Script executed successfully"'
         echo 'Deployment successfully completed.'
       }
     }
