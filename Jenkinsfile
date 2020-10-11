@@ -18,6 +18,10 @@ pipeline {
         stage('Test 2') {
           steps {
             echo 'Test 2 successfully completed'
+            retry(count: 5) {
+              echo 'Test...'
+            }
+
           }
         }
 
