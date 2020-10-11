@@ -9,7 +9,7 @@ pipeline {
 
     stage('Test') {
       parallel {
-        stage('Test') {
+        stage('Test 1') {
           steps {
             echo 'Test successfully completed'
           }
