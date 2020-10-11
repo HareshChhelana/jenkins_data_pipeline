@@ -36,5 +36,13 @@ pipeline {
       }
     }
 
+    stage('End') {
+      steps {
+        sh '''!#/bin/bash
+
+echo "Data pipeline completed successfully"'''
+      }
+    }
+
   }
 }
