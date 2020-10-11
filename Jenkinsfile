@@ -11,13 +11,19 @@ pipeline {
       parallel {
         stage('Test 1') {
           steps {
-            echo 'Test successfully completed'
+            echo 'Test 1 successfully completed'
           }
         }
 
-        stage('Sub test 1') {
+        stage('Test 2') {
           steps {
-            echo 'Sub test 1 successfully completed'
+            echo 'Test 2 successfully completed'
+          }
+        }
+
+        stage('Test 3') {
+          steps {
+            echo 'Test 3 successfully completed'
           }
         }
 
