@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('build') {
+    stage('Build') {
       steps {
         echo 'Build successfully completed'
       }
@@ -32,7 +32,8 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        sh 'echo "Script executed successfully"'
+        sh '''echo "Script executed successfully"
+echo "Script executed done"'''
         echo 'Deployment successfully completed.'
       }
     }
